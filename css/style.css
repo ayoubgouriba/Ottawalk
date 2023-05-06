@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.side-panel {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background-color: #333;
+  width: 300px;
+  padding: 20px;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  transform: scale(2);
+}
+
+.logo h1 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+}
+
+.buttons {
+  border: 1.5px dashed #ffffff;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.buttons h2 {
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.info h2 {
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.buttons .all {
+  display: flex;
+  width: 230px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.buttons button.active {
+  box-shadow: inset 0px 0px 0px 2px #fff;
+}
+
+.buttons .shortest {
+  background-color: #007BFF;
+}
+
+.buttons .nature {
+  background-color: #00C853;
+}
+
+.buttons .culture {
+  background-color: #AA00FF;
+}
+
+.buttons .market {
+  background-color: #FF6F00;
+}
+
+.buttons .all {
+  background-color: #565656;
+}
+
+.buttons button:focus, .buttons button:active {
+  outline: none;
+  box-shadow: inset 0px 0px 0px 2px #fff;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  border: 1.5px dashed #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.shortestInfo {
+  color: #007BFF;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.natureInfo {
+  color: #00C853;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cultureInfo {
+  color: #AA00FF;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.marketInfo {
+  color: #FF6F00;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  }
+  
+  .map-container {
+  flex: 1;
+  z-index: 0;
+  }
+  
+  #map {
+  height: 100%;
+  }
+  
+  .leaflet-popup-content {
+  color: black;
+  }
+  
+  .custom-context-menu {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  
+  .menu-item {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #333;
+  }
+  
+  .menu-item:hover {
+  background-color: #f5f5f5;
+  }
+  
+  #about {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  position: absolute;
+  bottom: 20px;
+  color: #ffffff;
+  text-decoration: underline;
+  cursor: pointer;
+  }
+  
+  .ui-dialog {
+  z-index: 2;
+  margin: 20px;
+  }
+  

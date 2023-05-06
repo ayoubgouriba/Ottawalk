@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ottawalk</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/Control.Geocoder.css" />
+    <link rel="stylesheet" href="css/leaflet.draw.css"/>
+    <link rel="stylesheet" href="css/MarkerCluster.css">
+    <link rel="stylesheet" href="css/MarkerCluster.Default.css">
+    <link rel="stylesheet" href="css/leaflet.measurecontrol.css">
+    <link rel="stylesheet" href="css/L.Control.Locate.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="side-panel">
+        <div class="logo">
+          <img src="css/ottawalk-logo-w.png" alt="App logo">
+        </div>
+        <div class="buttons">
+          <h2>Walking Profiles</h2>
+          <div class="button-grid">
+            <button class="shortest">Shortest</button>
+            <button class="nature">Nature</button>
+            <button class="culture">Culture</button>
+            <button class="market">Market</button>
+          </div>
+          <button class="all">All Profiles</button>
+        </div>
+        <div id="info" class="info">
+          <h2>Path Details</h2>
+          <div id="shortestInfo" class="shortestInfo"></div>
+          <div id="natureInfo" class="natureInfo"></div>
+          <div id="cultureInfo" class="cultureInfo"></div>
+          <div id="marketInfo" class="marketInfo"></div>
+        </div>
+
+        <span id="about">About</span>
+
+      </div>
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+    </div>
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/Control.Geocoder.js"></script>
+    <script src="js/terraformer.min.js"></script>
+    <script src="js/terraformer-wkt-parser.min.js"></script>
+    <script src="js/turf.min.js"></script>
+    <script src="js/leaflet.draw.js"></script>
+    <script src="js/leaflet.markercluster.js"></script>
+    <script src="js/leaflet.measurecontrol.js"></script>
+    <script src="js/L.Control.Locate.js"></script>
+    <script src="js/leaflet.browser.print.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
